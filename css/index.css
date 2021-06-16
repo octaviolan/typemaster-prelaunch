@@ -15,10 +15,12 @@
   /* font */
   --basefontFamily: 'Barlow', sans-serif;
   /* Typography */
-  --headline1: 900 56px/56px var(--basefontFamily);
+  --headline1Device: 900 48px/48px var(--basefontFamily);
+  --headline1Desktop: 900 56px/56px var(--basefontFamily);
   --headline2: 900 32px/36px var(--basefontFamily);
   --headline3: 900 24px/28px var(--basefontFamily);
   --body: 500 16px/26px var(--basefontFamily);
+  --bodyDesktop: 500 18px/26px var(--basefontFamily);
   /* Buttons */
   --button: 700 16px/26px var(--basefontFamily);
 }

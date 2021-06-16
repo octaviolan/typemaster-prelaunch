@@ -1,9 +1,46 @@
 .hero-content {
-  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  position: relative;
+}
+
+.hero-pattern {
+  display: none;
+  position: absolute;
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero-title {
+  margin: 0;
+  font: var(--headline1Device);
+  color: var(--drarkBlue);
+  text-transform: uppercase;
+}
+
+.hero-info {
+  margin: 0;
+}
+
+.hero-button {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.hero-button p {
+  margin: 0;
+  font: var(--button);
+  text-transform: uppercase;
 }
 
 .hero-image {
-  min-inline-size: 344px;
+  inline-size: 344px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   overflow: hidden;
@@ -12,3 +49,81 @@
 .hero-image img {
   vertical-align: middle;
 }
+
+@media screen and (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 69px;
+  }
+
+  .hero-description {
+    inline-size: 339px;
+    gap: 0;
+    flex-shrink: 0;
+  }
+
+  .hero-title {
+    margin-block-end: 34px;
+  }
+
+  .hero-info {
+    margin-block-end: 39px;
+  }
+
+  .hero-image {
+    inline-size: 321px;
+    flex-shrink: 0;
+  }
+
+  .hero-image img {
+    inline-size: 478px;
+    block-size: 425px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-content {
+    gap: 125px;
+  }
+
+  .hero-description {
+    inline-size: 445px;
+  }
+
+  .hero-title {
+    font: var(--headline1Desktop);
+    margin-block-end: 24px;
+  }
+
+  .hero-info {
+    font: var(--bodyDesktop);
+    margin-block-end: 40px;
+  }
+
+  .hero-image {
+    inline-size: 540px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* flex-shrink: 0; */
+  }
+
+   .hero-image img {
+    inline-size: 540px;
+    block-size: 480px;
+  }
+
+  .hero-pattern {
+    /* border: 1px solid red; */
+    inline-size: 90px;
+    overflow: hidden;
+    display: block;
+    top: 0;
+    right: -120px;
+  }
+
+  .hero-pattern img {
+    vertical-align: middle;
+  }
+}
+

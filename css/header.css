@@ -19,3 +19,10 @@
     margin-block-end: 62px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .header {
+    margin-block-start: 65px;
+    margin-block-end: 83px;
+  }
+}
