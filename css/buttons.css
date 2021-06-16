@@ -1,0 +1,44 @@
+.button {
+  padding-block-start: 11px;
+  padding-block-end: 11px;
+  padding-inline-start: 14px;
+  padding-inline-end: 14px;
+  font: var(--button);
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.button.is-primary {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.button.is-primary:hover {
+  background: var(--lightorange);
+}
+
+.button.is-secundary {
+  background: var(--lightGray);
+  color: var(--drarkBlue);
+}
+
+.button.is-secundary:hover {
+  background: var(--drarkBlue);
+  color: var(--white);
+}
+
+.button:active {
+  transform: scale(.95);
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+    padding-inline-start: 26px;
+    padding-inline-end: 27px;
+  }
+}

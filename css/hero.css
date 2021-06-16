@@ -1,0 +1,14 @@
+.hero-content {
+  /* border: 1px solid blue; */
+}
+
+.hero-image {
+  min-inline-size: 351px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  vertical-align: middle;
+}

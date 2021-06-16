@@ -1,0 +1,21 @@
+.header {
+  margin-block-start: 23px;
+  margin-block-end: 64px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    margin-block-start: 40px;
+    margin-block-end: 62px;
+  }
+}

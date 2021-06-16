@@ -1,0 +1,30 @@
+@import './fonts.css';
+@import './buttons.css';
+@import './wrapper.css';
+@import './header.css';
+@import './hero.css';
+
+:root {
+  /* colors */
+  --orange: #F16718;
+  --lightorange: #FF9B62;
+  --drarkBlue: #162542;
+  --violet: #7B8BAD;
+  --lightGray: #E8EFF2;
+  --white: #FFF;
+  /* font */
+  --basefontFamily: 'Barlow', sans-serif;
+  /* Typography */
+  --headline1: 900 56px/56px var(--basefontFamily);
+  --headline2: 900 32px/36px var(--basefontFamily);
+  --headline3: 900 24px/28px var(--basefontFamily);
+  --body: 500 16px/26px var(--basefontFamily);
+  /* Buttons */
+  --button: 700 16px/26px var(--basefontFamily);
+}
+
+body {
+  font: var(--body);
+  color: var(--violet);
+  margin: 0;
+}
