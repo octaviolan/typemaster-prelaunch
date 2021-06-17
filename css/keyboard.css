@@ -1,0 +1,132 @@
+.keyboard {
+  margin-block-end: 111px;
+}
+
+.keyboard-image {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.keyboard-image1 {
+  inline-size: 129px;
+  block-size: 193px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: linear-gradient(hsla(22, 89%, 52%, .85), hsla(22, 89%, 52%, .85)), url('../assets/mobile/image-phone-and-keyboard.jpg');
+  background-size: 129px 193px;
+  background-position: center;
+}
+
+.keyboard-image2 {
+  inline-size: 220px;
+  border-radius: 20px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: url('../assets/mobile/image-glass-and-keyboard.jpg');
+  background-size: 220px 193px;
+}
+
+.keyboard-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-block-start: 75px;
+}
+
+.keyboard-title {
+  font: var(--headline2);
+  color: var(--drarkBlue);
+  text-align: center;
+  text-transform: uppercase;
+  inline-size: 255px;
+  margin: 0;
+}
+
+.keyboard-info {
+  margin: 0;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+  .keyboard {
+    margin-block-end: 142px;
+
+  }
+  .keyboard-image {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .keyboard-image1 {
+    inline-size: 214px;
+    block-size: 320px;
+    background: linear-gradient(hsla(22, 89%, 52%, .85), hsla(22, 89%, 52%, .85)), url('../assets/tablet/image-phone-and-keyboard.jpg');
+    background-size: 214px 320px;
+    border-radius: 20px;
+  }
+
+  .keyboard-image2 {
+    inline-size: 445px;
+    block-size: 320px;
+    background: url('../assets/tablet/image-glass-and-keyboard.jpg');
+    background-size: 445px 320px;
+  }
+
+  .keyboard-description {
+    margin-block-start: 72px;
+    flex-direction: row;
+    gap: 36px;
+  }
+
+  .keyboard-title {
+    text-align: left;
+    flex-shrink: 0;
+  }
+
+  .keyboard-info {
+    text-align: left;
+  }
+}
+
+@media screen  and (min-width: 1024px){
+  .keyboard {
+    margin-block-end: 168px;
+  }
+
+  .keyboard-content {
+    display: flex;
+    align-items: center;
+    gap: 125px;
+  }
+
+  .keyboard-image {
+    justify-content: flex-start;
+    gap: 30px;
+  }
+
+   .keyboard-image1 {
+    inline-size: 255px;
+    block-size: 480px;
+    background: linear-gradient(hsla(22, 89%, 52%, .85), hsla(22, 89%, 52%, .85)), url('../assets/desktop/image-phone-and-keyboard.jpg');
+    background-size: 255px 480px;
+  }
+
+  .keyboard-image2 {
+    inline-size: 445px;
+    block-size: 480px;
+    background: url('../assets/desktop/image-glass-and-keyboard.jpg');
+    background-size: 445px 480px;
+  }
+
+  .keyboard-description {
+    margin: 0;
+    inline-size: 255px;
+    flex-direction: column;
+    gap: 27px;
+  }
+}
