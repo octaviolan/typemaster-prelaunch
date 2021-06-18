@@ -1,0 +1,39 @@
+.features-content {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.features-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features-image {
+  inline-size: 65px;
+  block-size: 65px;
+  border-radius: 16px;
+  background: var(--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-title {
+  margin-block-start: 48px;
+  margin-block-end: 24px;
+  font: var(--headline3);
+  color: var(--drarkBlue);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.features-title span {
+  display: block;
+}
+
+.features-info {
+  margin: 0;
+  text-align: center;
+}

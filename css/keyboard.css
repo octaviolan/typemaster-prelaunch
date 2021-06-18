@@ -1,5 +1,10 @@
 .keyboard {
   margin-block-end: 111px;
+
+}
+
+.keyboard-content {
+  position: relative;
 }
 
 .keyboard-image {
@@ -51,6 +56,9 @@
   text-align: center;
 }
 
+.keyboard-pattern {
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
   .keyboard {
@@ -128,5 +136,21 @@
     inline-size: 255px;
     flex-direction: column;
     gap: 27px;
+  }
+
+  .keyboard-pattern {
+    inline-size: 90px;
+    block-size: 236px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -120px;
+    background: url('../assets/shared/pattern-square.svg');
+    background-position: right;
+  }
+
+  .keyboard-pattern img {
+    vertical-align: middle;
   }
 }

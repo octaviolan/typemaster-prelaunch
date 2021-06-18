@@ -4,6 +4,7 @@
 @import './header.css';
 @import './hero.css';
 @import './keyboard.css';
+@import './features.css';
 
 :root {
   /* colors */
