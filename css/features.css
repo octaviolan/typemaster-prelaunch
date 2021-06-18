@@ -62,3 +62,14 @@
     text-align: start;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .features-content {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .features-item {
+     inline-size: 255px;
+  }
+}
+
