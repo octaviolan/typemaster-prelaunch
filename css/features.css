@@ -1,3 +1,7 @@
+.features {
+  margin-block-end: 96px;
+}
+
 .features-content {
   display: flex;
   flex-direction: column;
@@ -36,4 +40,25 @@
 .features-info {
   margin: 0;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    margin-block-end: 142px;
+  }
+  .features-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 69px;
+  }
+
+  .features-item {
+     inline-size: 281px;
+     align-items: flex-start;
+  }
+
+  .features-title,
+  .features-info {
+    text-align: start;
+  }
 }
